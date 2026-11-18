@@ -159,7 +159,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="inline-flex min-h-12 items-center gap-2 border-2 border-ink bg-ink px-6 py-3 text-[13px] font-bold text-paper shadow-[5px_5px_0_0_#1de9a0] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0_0_#1de9a0] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[2px_2px_0_0_#1de9a0] disabled:cursor-wait disabled:opacity-70"
+          className="inline-flex min-h-12 items-center gap-2 border-2 border-ink bg-ink px-6 py-3 text-[13px] font-bold text-paper shadow-[5px_5px_0_0_#1de9a0] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[3px_3px_0_0_#1de9a0] active:translate-x-0.75 active:translate-y-0.75 active:shadow-[2px_2px_0_0_#1de9a0] disabled:cursor-wait disabled:opacity-70"
         >
           {status === "sending" ? (
             <LoaderCircle aria-hidden="true" className="size-4 animate-spin" />

@@ -15,6 +15,13 @@ const outfit = Outfit({
 const description =
   "Portfolio of Bonanza Narayan, a full-stack engineer with 5+ years building web products, APIs, PWA and SaaS — from first pixel to final deploy."
 
+const ogImage = {
+  url: "/og-image.png",
+  width: 1200,
+  height: 630,
+  alt: `${profile.name} — Full-stack engineer`,
+}
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -77,12 +84,14 @@ export const metadata: Metadata = {
     siteName,
     title: `${profile.name} — Full-stack engineer`,
     description,
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — Full-stack engineer`,
     description,
     creator: "@narayanbona",
+    images: [ogImage],
   },
   category: "Technology",
 }
