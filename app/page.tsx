@@ -1,19 +1,23 @@
-import { Button } from "@/components/ui/button"
+import { SiteHeader } from "@/components/site-header"
+import { Hero } from "@/components/hero"
+import { Marquee } from "@/components/marquee"
+import { About } from "@/components/about"
+import { Services } from "@/components/services"
+import { Projects } from "@/components/projects"
+import { Contact } from "@/components/contact"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <>
+      <SiteHeader />
+      <main id="main" tabIndex={-1} className="overflow-x-clip">
+        <Hero />
+        <Marquee />
+        <About />
+        <Services />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   )
 }
